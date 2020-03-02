@@ -8,13 +8,13 @@ import org.openqa.selenium.WebElement;
 
 /**/
 public class GoogleImagesSearchToolToolbarElements extends WebElementHelper {
-    public GoogleImageSearchPage imageSearchPage;
+    public GoogleImagesSearchPage imageSearchPage;
     private WebDriver driver = Browser.getWebDriver();
     private By toolsToolbar = By.cssSelector("div.xFo9P");//Инструменты в тулбаре
     private By extraSize = By.cssSelector("a[href*=\"3Al\"]");//Настройка Размеры "Большие"
 
-    public GoogleImagesSearchToolToolbarElements(GoogleImageSearchPage googleImageSearchPage) {
-        imageSearchPage = googleImageSearchPage;
+    public GoogleImagesSearchToolToolbarElements(GoogleImagesSearchPage googleImagesSearchPage) {
+        imageSearchPage = googleImagesSearchPage;
     }
 
     /*Поиск по Большим картинкам*/

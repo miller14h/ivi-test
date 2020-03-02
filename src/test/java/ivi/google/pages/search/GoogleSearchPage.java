@@ -2,7 +2,7 @@ package ivi.google.pages.search;
 
 import ivi.google.pages.PlayGooglePage;
 import ivi.google.pages.WikiPage;
-import ivi.google.pages.search.images.GoogleImageSearchPage;
+import ivi.google.pages.search.images.GoogleImagesSearchPage;
 import ivi.google.utils.Browser;
 import ivi.google.utils.WebElementHelper;
 import org.openqa.selenium.By;
@@ -32,11 +32,11 @@ public class GoogleSearchPage extends WebElementHelper {
     }
 
     /*Выбор поиска по картинкам*/
-    public GoogleImageSearchPage clickSearchByImages() {
+    public GoogleImagesSearchPage clickSearchByImages() {
         WebElement webElement = driver.findElement(searchToolbar).findElement(searchByImagesButton);
         waitVisibleEnable(webElement);
         webElement.click();
-        return new GoogleImageSearchPage();
+        return new GoogleImagesSearchPage();
     }
 
     /*Переход на страницу из поиска в Google Play*/
