@@ -7,12 +7,15 @@ group 'org.example'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    compile files("${System.properties['java.home']}/../lib/tools.jar")
     testImplementation('org.junit.jupiter:junit-jupiter:5.6.0')
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
 }
